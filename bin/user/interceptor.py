@@ -1324,6 +1324,12 @@ class Observer(Consumer):
             'humidityin': 'humidity_in',
             'uv': 'uv',
 
+            # firmware AMBWeatherV4.2.8
+            'pm25': 'pm2_5',
+            'batt_25': 'pm25_battery',
+            'battout': 'battery',
+
+
             # firmware WS-1002 V2.4.3 also reports station pressure
             'absbaromin': 'pressure',
 
@@ -1344,6 +1350,7 @@ class Observer(Consumer):
             'relbaro', 'rainin',
             'weeklyrain', 'monthlyrain',
             'weeklyrainin', 'monthlyrainin',
+            'baromrelin', 'stationtype', 'maxdailygust', 'hourlyrainin', 'eventrainin', 'totalrainin', 'pm25_24h'
         ]
 
         def __init__(self):
